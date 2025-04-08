@@ -1,0 +1,15 @@
+{
+  "config":{
+    "hw_platform": ["MTP"],
+    "soc_id": ["519", "557", "536", "577"]
+  },
+  "oplus_backtap_commom":{
+    "owner": "oplus_backtap",
+    ".config":{
+      "owner": "oplus_backtap",
+      "is_available":{ "type": "int", "ver": "0",
+        "data": "1"
+      }
+    }
+  }
+}

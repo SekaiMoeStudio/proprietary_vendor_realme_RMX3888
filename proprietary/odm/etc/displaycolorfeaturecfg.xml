@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone='yes' ?>
+<root>
+    <oplsStcCfg>
+        <mode name="feature1">
+        </mode>
+        <mode name="feature2">
+        </mode>
+        <mode name="feature3">
+        </mode>
+        <mode name="feature4">
+        </mode>
+        <mode name="feature5">
+            <level1> 10, 8, 1, 3, 600, 750, 750 </level1>
+            <level2> 10, 8, 2, 2, 500, 500, 500 </level2>
+        </mode>
+    </oplsStcCfg>
+    <oplsClstcCfg>
+        <mode name="feature1">
+            <level1> 20, 8, 0, 3, 750, 750, 800 </level1>
+        </mode>
+    </oplsClstcCfg>
+</root>

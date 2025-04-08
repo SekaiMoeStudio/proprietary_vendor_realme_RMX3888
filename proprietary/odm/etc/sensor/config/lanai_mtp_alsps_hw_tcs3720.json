@@ -1,0 +1,256 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Dragon", "Surf", "QRD", "HDK", "IDP", "IOT", "RCM"],
+    "soc_id": ["519", "557", "536", "577"]
+  },
+  "alsps_hw_tcs3720":{
+    "owner": "sns_alsps",
+    ".key_config":{
+      "owner": "sns_alsps",
+      "is_als_dri":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "is_ps_dri":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "als_lb_algo":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "ps_hw_cali":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "ps_ir_algo":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "ps_dual_power":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "ps_far_gesture":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "als_row_coe":{ "type": "int", "ver": "0",
+        "data": "110"
+      },
+      "als_ud_buf_len":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "als_timer_ms":{ "type": "int", "ver": "0",
+        "data": "100"
+      },
+      "ps_timer_ms":{ "type": "int", "ver": "0",
+        "data": "70"
+      },
+      "pwm_freq":{"type": "int", "ver": "0",
+        "data": "360"
+      },
+      "ir_ratio":{"type": "int", "ver": "0",
+        "data": "10"
+      },
+      "lux_offset":{"type": "int", "ver": "0",
+        "data": "0"
+      },
+      "lux_cut":{"type": "int", "ver": "0",
+        "data": "0"
+      },
+      "long_integ_ms":{"type": "int", "ver": "0",
+        "data": "25"
+      },
+      "ps_near_check_num":{"type": "int", "ver": "0",
+        "data": "3"
+      },
+      "ps_far_check_num":{"type": "int", "ver": "0",
+        "data": "1"
+      },
+      "auto_gain_timer_ms":{"type": "int", "ver": "0",
+        "data": "40"
+      },
+      "algo_para_num":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "brl_thrd_num":{ "type": "int", "ver": "0",
+        "data": "2"
+      }
+    },
+    ".hw_cfg":{
+      "owner": "sns_alsps",
+      "debug_mode":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "always_lb":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "use_asp1":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "h_ir_ratio":{ "type": "int", "ver": "0",
+        "data": "1000000"
+      }
+    },
+    ".reg":{
+      "owner": "sns_alsps",
+      "reg0":{ "type": "int", "ver": "0",
+        "data": "0xD9B0"
+      }
+    },
+    ".dynamic_cali":{
+      "owner": "sns_alsps",
+      ".dt":{
+        "owner": "sns_alsps",
+        "low_step":{ "type": "int", "ver": "0",
+          "data": "300"
+        },
+        "high_step":{ "type": "int", "ver": "0",
+          "data": "400"
+        },
+        "low_limit":{ "type": "int", "ver": "0",
+          "data": "650"
+        },
+        "high_limit":{ "type": "int", "ver": "0",
+          "data": "1500"
+        },
+        "dirty_low_step":{ "type": "int", "ver": "0",
+          "data": "300"
+        },
+        "dirty_high_step":{ "type": "int", "ver": "0",
+          "data": "400"
+        },
+        "ps_dirty_limit":{ "type": "int", "ver": "0",
+          "data": "1800"
+        },
+        "ps_ir_limit":{ "type": "int", "ver": "0",
+          "data": "20"
+        },
+        "ps_adjust_min":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "ps_adjust_max":{ "type": "int", "ver": "0",
+          "data": "1850"
+        },
+        "sampling_count":{ "type": "int", "ver": "0",
+          "data": "5"
+        },
+        "step_max":{ "type": "int", "ver": "0",
+          "data": "30000"
+        },
+        "step_min":{ "type": "int", "ver": "0",
+          "data": "150"
+        },
+        "step_div":{ "type": "int", "ver": "1",
+          "data": "1500"
+        },
+        "anti_shake_delta":{ "type": "int", "ver": "0",
+          "data": "120"
+        }
+      },
+      ".dc":{
+        "owner": "sns_alsps",
+        "dynamic_cali_max":{ "type": "int", "ver": "0",
+          "data": "2000"
+        },
+        "raw2offset_radio":{ "type": "int", "ver": "0",
+          "data": "1000"
+        },
+        "offset_max":{ "type": "int", "ver": "0",
+          "data": "60000"
+        },
+        "offset_range_min":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "offset_range_max":{ "type": "int", "ver": "0",
+          "data": "65535"
+        },
+        "force_cali_limit":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "cali_jitter_limit":{ "type": "int", "ver": "0",
+          "data": "80"
+        },
+        "cal_offset_margin":{ "type": "int", "ver": "0",
+          "data": "3000"
+        },
+        "cali_over_zore_cnt":{ "type": "int", "ver": "0",
+          "data": "10"
+        },
+        "boot_cali_delta":{ "type": "int", "ver": "0",
+          "data": "80"
+        }
+      }
+    },
+    ".algo_para_0":{
+      "owner": "sns_alsps",
+      "gold_ch":{ "type": "str", "ver": "0",
+        "data": "13660, 6320, 3188, 21476, 8836, 6812, 3876, 18304"
+      },
+      "cct_reset_ch_golden":{ "type": "str", "ver": "0",
+        "data": "1.0, 1.0, 1.0, 1.0"
+      },
+      "sync_delay_us":{ "type": "str", "ver": "0",
+        "data": "940, 3650, 940, 940, 3650, 940"
+      },
+      "lb_brl_thrd":{ "type": "str", "ver": "0",
+        "data": "1328, 1741"
+      },
+      "duty_cycle":{ "type": "str", "ver": "0",
+        "data": "0, 0, 0"
+      },
+      "asp_mode":{ "type": "str", "ver": "0",
+        "data": "0, 0, 0"
+      },
+      "double_integ":{ "type": "str", "ver": "0",
+        "data": "0, 0, 0"
+      },
+      "integ_sync_us":{ "type": "str", "ver": "0",
+        "data": "0, 0, 0"
+      },
+      "power_config":{ "type": "str", "ver": "0",
+        "data": "0, 126, 120, 73, 0, 126, 120, 73, 0, 126, 120, 73, 192, 253, 125, 78"
+      },
+      "lux_coef_SuperHir":{ "type": "str", "ver": "0",
+        "data": "0.00043608, 0.000779302, 0.001020477, 0.002806356"
+      },
+      "matrix_1_lux_coef_Hir":{ "type": "str", "ver": "0",
+        "data": "-0.00767227, 0.01625221, -0.01631112, 0.00805073"
+      },
+      "matrix_1_lux_coef_Lir":{ "type": "str", "ver": "0",
+        "data": "-0.02661244, -0.01257801, -0.02920362, 0.03092441"
+      },
+      "matrix_1_cct_coef_Hir":{ "type": "str", "ver": "0",
+        "data": "-0.00523576, 0.01254299, -0.0135476, 0.00712385, -0.00767227, 0.01625221, -0.01631112, 0.00805073, -0.01625679, 0.03343607, -0.01317012, 0.00574302"
+      },
+      "matrix_1_cct_coef_Lir":{ "type": "str", "ver": "0",
+        "data": "-0.03402926, -0.02519501, -0.04122136, 0.04153631, -0.02661244, -0.01257801, -0.02920362, 0.03092441, -0.05346397, -0.04439251, -0.005451, 0.05019865"
+      },
+      "matrix_2_lux_coef_Hir":{ "type": "str", "ver": "0",
+        "data": "-0.00767227, 0.01625221, -0.01631112, 0.00805073"
+      },
+      "matrix_2_lux_coef_Lir":{ "type": "str", "ver": "0",
+        "data": "-0.02661244, -0.01257801, -0.02920362, 0.03092441"
+      },
+      "matrix_2_cct_coef_Hir":{ "type": "str", "ver": "0",
+        "data": "-0.00523576, 0.01254299, -0.0135476, 0.00712385, -0.00767227, 0.01625221, -0.01631112, 0.00805073, -0.01625679, 0.03343607, -0.01317012, 0.00574302"
+      },
+      "matrix_2_cct_coef_Lir":{ "type": "str", "ver": "0",
+        "data": "-0.03402926, -0.02519501, -0.04122136, 0.04153631, -0.02661244, -0.01257801, -0.02920362, 0.03092441, -0.05346397, -0.04439251, -0.005451, 0.05019865"
+      },
+      "matrix_2_double_integ_k":{"type": "str", "ver": "0",
+        "data": "-0.00000000002034703588, 0.00000020506545785033, -0.00071460164649766000, 0.98748150985837200000, -0.00000000001775539399, 0.00000018778850655219, -0.00068338818343194100, 0.97868273170433200000, -0.00000000001949978197, 0.00000019565673337798, -0.00067205553768217400, 0.90490615890794500000, -0.00000000001373481151, 0.00000014970034686471, -0.00055796021528598600, 0.82718522983274200000"
+      },
+      "matrix_3_lux_coef_Hir":{ "type": "str", "ver": "0",
+        "data": "-0.00767227, 0.01625221, -0.01631112, 0.00805073"
+      },
+      "matrix_3_lux_coef_Lir":{ "type": "str", "ver": "0",
+        "data": "-0.02661244, -0.01257801, -0.02920362, 0.03092441"
+      },
+      "matrix_3_cct_coef_Hir":{ "type": "str", "ver": "0",
+        "data": "-0.00523576, 0.01254299, -0.0135476, 0.00712385, -0.00767227, 0.01625221, -0.01631112, 0.00805073, -0.01625679, 0.03343607, -0.01317012, 0.00574302"
+      },
+      "matrix_3_cct_coef_Lir":{ "type": "str", "ver": "0",
+        "data": "-0.03402926, -0.02519501, -0.04122136, 0.04153631, -0.02661244, -0.01257801, -0.02920362, 0.03092441, -0.05346397, -0.04439251, -0.005451, 0.05019865"
+      },
+      "matrix_3_double_integ_k":{"type": "str", "ver": "0",
+        "data": "-0.00000000002034703588, 0.00000020506545785033, -0.00071460164649766000, 0.98748150985837200000, -0.00000000001775539399, 0.00000018778850655219, -0.00068338818343194100, 0.97868273170433200000, -0.00000000001949978197, 0.00000019565673337798, -0.00067205553768217400, 0.90490615890794500000, -0.00000000001373481151, 0.00000014970034686471, -0.00055796021528598600, 0.82718522983274200000"
+      }
+    }
+  }
+}
