@@ -12,6 +12,9 @@ soong_namespace {
 		"vendor/qcom/opensource/commonsys/display",
 		"vendor/qcom/opensource/commonsys-intf/display",
 		"vendor/qcom/opensource/dataservices",
+	        "vendor/qcom/common/vendor/media",
+	        "vendor/qcom/common/vendor/perf",
+	        "vendor/qcom/common/vendor/wlan"
 	],
 }
 
@@ -1560,24 +1563,6 @@ cc_prebuilt_library_shared {
 	target: {
 		: {
 			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.swpdpc.so"],
-			shared_libs: [ ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "camera/components",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.qti.node.swpnc",
-	owner: "",
-	strip: {
-		none: true,
-	},
-	target: {
-		: {
-			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.swpnc.so"],
 			shared_libs: [ ],
 		},
 	},
@@ -21591,23 +21576,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libpwsoftirisPCS",
-	owner: "",
-	strip: {
-		none: true,
-	},
-	target: {
-		: {
-			srcs: ["proprietary/odm/lib64/libpwsoftirisPCS.so"],
-			shared_libs: [ ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libqcodec2_dolbydecoderfilter",
 	owner: "",
 	strip: {
@@ -25468,14 +25436,6 @@ sh_binary {
 	src: "proprietary/odm/bin/hw/wlschgd",
 	filename: "wlschgd",
 	sub_dir: "hw",
-	device_specific: true,
-}
-
-sh_binary {
-	name: "occe_create",
-	owner: "",
-	src: "proprietary/odm/bin/occe_create",
-	filename: "occe_create",
 	device_specific: true,
 }
 
