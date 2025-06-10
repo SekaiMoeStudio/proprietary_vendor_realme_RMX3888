@@ -26,10 +26,6 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		: {
-			srcs: ["proprietary/vendor/lib/libpwirisfeature.so"],
-			shared_libs: [ ],
-		},
-		: {
 			srcs: ["proprietary/vendor/lib64/libpwirisfeature.so"],
 			shared_libs: [ ],
 		},
@@ -46,10 +42,6 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		: {
-			srcs: ["proprietary/vendor/lib/libpwirishal.so"],
-			shared_libs: [ ],
-		},
 		: {
 			srcs: ["proprietary/vendor/lib64/libpwirishal.so"],
 			shared_libs: [ ],
