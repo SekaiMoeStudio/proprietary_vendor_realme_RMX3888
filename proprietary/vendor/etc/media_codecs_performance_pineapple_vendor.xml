@@ -39,6 +39,10 @@
         </MediaCodec>
         <MediaCodec name="c2.qti.hevc.decoder" type="video/hevc" update="true">
             <Limit name="measured-frame-rate-352x288" range="625-1900" />
+        <!-- #ifdef OPLUS_BUG_COMPATIBILITY -->
+        <!-- yuhan lin@MULTIMEDIA.MEDIASERVER.PLAYER, 8422140, 2024/12/11 -->
+            <Limit name="measured-frame-rate-640x360" range="227-1320" />
+        <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
             <Limit name="measured-frame-rate-720x480" range="970-1498" />
             <Limit name="measured-frame-rate-1280x720" range="744-1036" />
             <Limit name="measured-frame-rate-1920x1080" range="260-1200" />
@@ -46,6 +50,10 @@
         </MediaCodec>
         <MediaCodec name="c2.qti.hevc.decoder.low_latency" type="video/hevc" update="true">
             <Limit name="measured-frame-rate-352x288" range="625-1850" />
+        <!-- #ifdef OPLUS_BUG_COMPATIBILITY -->
+        <!-- yuhan lin@MULTIMEDIA.MEDIASERVER.PLAYER, 8422140, 2024/12/11 -->
+            <Limit name="measured-frame-rate-640x360" range="227-1320" />
+        <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
             <Limit name="measured-frame-rate-720x480" range="971-1500" />
             <Limit name="measured-frame-rate-1280x720" range="315-1920" />
             <Limit name="measured-frame-rate-1920x1080" range="220-800" />

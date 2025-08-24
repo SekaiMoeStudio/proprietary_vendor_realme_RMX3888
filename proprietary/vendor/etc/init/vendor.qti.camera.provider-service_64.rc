@@ -22,3 +22,6 @@ service vendor.camera-provider /vendor/bin/hw/vendor.qti.camera.provider-service
 
 on boot
     chown cameraserver camera /sys/module/camera/parameters/cam_event_inject
+
+on property:sys.boot_completed=1
+    setprop vendor.oppo.camera.cam0.count 0

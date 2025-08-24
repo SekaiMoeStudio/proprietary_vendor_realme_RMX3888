@@ -1,4 +1,4 @@
-service oplus_charger_hal_service /odm/bin/hw/vendor.oplus.hardware.charger-V5-service
+service oplus_charger_hal_service /odm/bin/hw/vendor.oplus.hardware.charger-V6-service
     interface aidl vendor.oplus.hardware.charger.ICharger/default
     class hal
     user system
@@ -71,9 +71,19 @@ on property:sys.boot_completed=1
     chown system system /sys/class/oplus_chg/battery/eis_current
     chown system system /sys/class/oplus_chg/common/deep_dischg_counts
     chown system system /sys/class/oplus_mutual/cmd
-    chown system system /sys/bus/platform/devices/ext-power-throttling/ext_power_throttle_ut
     chmod 0644 /sys/class/oplus_wireless/pencil/q_cali
     chown system system /sys/class/oplus_wireless/pencil/q_cali
+    chown system system /sys/bus/platform/devices/ext-power-throttling/ext_power_throttle_ut
+    chown system system /proc/usb/repeater_parameters
+    chown system system /proc/oplus_usb_eusb2/eusb2
+    chown system system /proc/oplus_usb_xsphy/xsphy
+    chmod 0666 /proc/usb/repeater_parameters
+    chmod 0666 /proc/oplus_usb_eusb2/eusb2
+    chmod 0666 /proc/oplus_usb_xsphy/xsphy
+    chown system system /sys/class/oplus_chg/common/plc
+    chown system system /sys/class/oplus_chg/common/non_standard_chg_switch
+    chown system system /sys/class/oplus_chg/common/dec_delta
+    chown system system /sys/class/oplus_chg/battery/battery_seal_flag
 
 service ufcsd /odm/bin/hw/ufcsd
     class main
@@ -84,15 +94,20 @@ service ufcsd /odm/bin/hw/ufcsd
 on boot
     chown system system /dev/ufcs_dev
     chown system system /sys/class/oplus_chg/common/chg_up_limit
+    chown system system /sys/class/oplus_chg/battery/battery_seal_flag
     chown system system /sys/class/oplus_chg/battery/battery_first_usage_date
     chown system system /sys/class/oplus_chg/battery/battery_ui_cc
     chown system system /sys/class/oplus_chg/battery/battery_ui_soh
     chown system system /sys/class/oplus_chg/battery/rechg_soc
     chown system system /sys/class/oplus_chg/battery/battery_used_flag
     start ufcsd
+    chown system system /sys/class/power_supply/battery/current_now
+    chmod 0664 /sys/class/power_supply/battery/current_now
 
 on charger
     chown system system /dev/ufcs_dev
     chown system system /sys/class/oplus_chg/common/chg_up_limit
     chown system system /sys/class/oplus_chg/battery/rechg_soc
     start ufcsd
+    chown system system /sys/class/power_supply/battery/current_now
+    chmod 0664 /sys/class/power_supply/battery/current_now

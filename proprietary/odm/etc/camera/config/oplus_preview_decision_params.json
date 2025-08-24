@@ -1081,6 +1081,13 @@
             "initValue": 0
         },
         {
+            "paramName": "disableBpc",
+            "valueRange": [0, 1],
+            "valueType": "int",
+            "dataType": "value",
+            "initValue": 0
+        },
+        {
             "paramName": "captureEVList",
             "valueType": "mixture",
             "dataType": "array"

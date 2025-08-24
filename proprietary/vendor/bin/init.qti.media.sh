@@ -121,6 +121,10 @@ case "$target" in
         setprop vendor.mm.target.enable.qcom_parser 0
         case "$soc_hwid" in
             636|640|641|657|658)
+                #wangjunsheng@MULTIMEDIA.MEDIASERVER.PLAYER, 2024/11/5,
+                #add ro.netflix.bsp_rev to support Netflix Widevine L1 function.
+                setprop vendor.netflix.bsp_rev "Q7635-39449-1"
+                #add ro.netflix.bsp_rev end
                 setprop vendor.media.target_variant "_volcano_v0"
                 sku_ver=`cat /sys/devices/platform/soc/aa00000.qcom,vidc/sku_version` 2> /dev/null
                 if [ $sku_ver -eq 1 ]; then

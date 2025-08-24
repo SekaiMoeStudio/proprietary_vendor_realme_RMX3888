@@ -76,7 +76,11 @@
             // Default value of this wait time is 150ms, even if this value is not set in this file.
             // Lower wait time might increase the thread activity in some corner cases.
             // Higher wait time might affect stop latency in some cases.
-            "dec_bufferpool_fence_wait_time_ms": 150
+            "dec_bufferpool_fence_wait_time_ms": 150,
+            // #ifdef OPLUS_BUG_COMPATIBILITY
+            // SunQinhua@MULTIMEDIA.MEDIASERVER.PLAYER, output 4K video without color info as BT.709
+            "default_primaries_override":1
+            // #endif OPLUS_BUG_COMPATIBILITY
         },
 
         "ProsightModeBitrateTable": [

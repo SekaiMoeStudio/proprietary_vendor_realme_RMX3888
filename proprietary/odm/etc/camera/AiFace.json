@@ -54,9 +54,13 @@
             "pointsNum": 0,
             "netWidth": 704,
             "netHeight": 448,
+            "deblemish_size_ratio": 2,
+            "shadow_size_ratio": 2,
+            "facewarp_size_ratio": 1,
             "unifyRatio": 1.0,
             "Acceleration": "NEON",
-            "AIsoftenEnable": false
+            "HighpassKernelSize": 9,
+            "HighpassThreshold": 2
         }
     ],
     "EyeProduct": "2303",

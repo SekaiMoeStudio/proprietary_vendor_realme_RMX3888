@@ -24,6 +24,28 @@
 },
 
 {
+  "VendorTag": "com.oplus.aps.group.photo.pipeline.r2j",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.asd.skipframe.cnt.outside",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "3",
+  "Comment": "set asd skip frame outside count, default:0"
+},
+
+{
+  "VendorTag": "com.oplus.aps.group.photo.version",
+  "Type": "Float",
+  "Count": "1",
+  "Value": "1.5"
+},
+
+{
   "VendorTag": "com.oplus.sat.hdr.fusion.zoom.ratio.range",
   "Type": "Float",
   "Count": "2",
@@ -1756,6 +1778,24 @@
   "Type": "Int32",
   "Count": "1",
   "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.group.photo.enable",
+  "Type": "Int32",
+  "Count": "33",
+  "Value": "1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0",
+  "Comment": "enable or disable group photo of each capMode.
+              capMode: REAR_NORMAL, FRONT_NORMAL, REAR_BOKEH, FRONT_BOKEH, REAR_NIGHT, FRONT_NIGHT, PANORAMA, PROFESSIONAL, STICKER, VIDEO, FAST_VIDEO, SLOW_VIDEO, SUPER_TEXT, HIGH_PIC_SIZE, ULTRA_HIGH_DEFINITION, MACRO, GROUP_SHOT,  /* 0-16 */
+              STARMODE, STAR_VIDEO, MICROSCOPE, MICROSCOPE_VIDEO, TIMELAPSE_PRO, LONGEXPOSURE, STREET, ID_PHOTO, MOVIE, FISH_EYE, 3D_PHOTO, AI_HIGH_PIXEL, XPAN, SKIN_DETECT, PROFESSIONALFULL, GROUP_PHOTO    /* 17-32 */"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.quickshot.threshold",
+  "Type": "Int32",
+  "Count": "5",
+  "Value": "  5,                5,                 2500,             3900,           3600",
+  "Comment": "mainAlgoCntLimit, alterAlgoCntLimit, singleCapPeakMem, cameraMemLimit, cameraMemLimitLow"
 },
 
 {

@@ -71,6 +71,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <AppLayer  name="autotest.oppo.com.simulatedlivebroadcast/autotest.oppo.com.simulatedlivebroadcast.activity.Texture2Activity](BLAST)" type="camera" strategy="mode" mode="2" enable="true"/>
       </LayerApp>
 
+      <LayerApp name="Meituxiuxiu">
+        <AppLayer  name="SurfaceView[com.mt.mtxx.mtxx/com.mt.mtxx.camera.view.CameraActivity](BLAST)" type="camera" strategy="mode" mode="2" enable="true"/>
+      </LayerApp>
+
+      <LayerApp name="xiaohongshu">
+        <AppLayer  name="SurfaceView[com.xingin.xhs/com.xingin.capa.lib.entrance.CapaEntranceActivity](BLAST)" type="camera" strategy="mode" mode="2" enable="true"/>
+      </LayerApp>
+
       <LayerApp name="bilibili">
           <AppLayer  name="SurfaceView[tv.danmaku.bili/com.bilibili.studio.centerplus.ui.CenterPlusMainActivity](BLAST)" type="camera" strategy="mode" mode="2" enable="true"/>
       </LayerApp>
@@ -205,10 +213,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
       <LayerApp name="DouYinShiKe2">
         <AppLayer  name="com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.closefriends.moment3.container.MomentActivity" type="camera" strategy="mode" mode="2" enable="true"/>
-      </LayerApp>
-
-      <LayerApp name="DouYinLiteShiKe">
-        <AppLayer  name="com.ss.android.ugc.aweme.lite/com.ss.android.ugc.aweme.detail.ui.DetailActivity" type="camera" strategy="mode" mode="2" enable="true"/>
       </LayerApp>
 
       <LayerApp name="DouYinHuoShan">
@@ -477,6 +481,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
       <LayerApp name="OPGALLERY">
         <AppLayer  name="SurfaceView[com.oneplus.gallery/com.oppo.gallery3d.app.ViewGallery](BLAST)" type="camera" strategy="mode" mode="2" enable="true"/>
+      </LayerApp>
+
+      <LayerApp name="gallery3d">
+        <AppLayer  name="SurfaceView[com.coloros.gallery3d/com.oppo.gallery3d.app.ViewGallery](BLAST)" type="camera" strategy="mode" mode="2" enable="true"/>
       </LayerApp>
 
       <LayerApp name="kuaidui">
